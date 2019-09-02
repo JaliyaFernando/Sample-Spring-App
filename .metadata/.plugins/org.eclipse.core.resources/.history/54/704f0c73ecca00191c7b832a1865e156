@@ -1,0 +1,8 @@
+package com.example.Repository;
+
+import com.example.Model.User;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface UserRepository extends MongoRepository<User,String> {
+    User findBy_id(String _id);
+}
